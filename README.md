@@ -26,27 +26,28 @@ This files were made for the arich UNet-CNN, so yeah modify em however needed
 1. UNet_torch.py has a parser integrated to run on terminal:
     * run: python UNet_torch.py -h to see all the available options
 ```
-    usage: UNet_torch.py [-h] [-input_files_path INPUT_FILES_PATH] -mod
-                     {Test,Train,GetWeights} [-model_path MODEL_PATH]
-                     [-n_epochs N_EPOCHS] [-batch BATCH] [-saved_sets SAVED_SETS]
-                     [-rebatch REBATCH]
+    usage: UNet_torch.py [-h] [-input_files_path INPUT_FILES_PATH] -mod {Test,Train,GetWeights} [-model_path MODEL_PATH]
+                     [-n_epochs N_EPOCHS] [-batch BATCH] [-saved_sets SAVED_SETS] [-rebatch REBATCH]
 
-options:
-  -h, --help            show this help message and exit
-  -input_files_path INPUT_FILES_PATH, -i INPUT_FILES_PATH
-                        Path to input files with TRB3 hits and momenta
-                        reconstruction
-  -mod {Test,Train,GetWeights}, -m {Test,Train,GetWeights}
-                        Mode of the code: Predict: loads a model already trained,
-                        Train: makes a model and trains it
-  -model_path MODEL_PATH, -p MODEL_PATH
-                        path to saved model
-  -n_epochs N_EPOCHS, -n N_EPOCHS
-                        number of epochs
-  -batch BATCH, -b BATCH
-                        batch size
-  -saved_sets SAVED_SETS
-                        path of saved sets
-  -rebatch REBATCH      new batch size
-
+    options:
+      -h, --help            show this help message and exit
+      -input_files_path INPUT_FILES_PATH, -i INPUT_FILES_PATH
+                            Path to input files with TRB3 hits and momenta reconstruction
+      -mod {Test,Train,GetWeights}, -m {Test,Train,GetWeights}
+                            Mode of the code:  
+                             Test: loads a model already trained 
+                             Train: makes a model and trains it 
+                             GetWeights: get the weights only of a trained model
+      -model_path MODEL_PATH, -p MODEL_PATH
+                            path to saved model
+      -n_epochs N_EPOCHS, -n N_EPOCHS
+                            number of epochs
+      -batch BATCH, -b BATCH
+                            batch size
+      -saved_sets SAVED_SETS
+                            path of saved sets 
+      -rebatch REBATCH      new batch size
 ```
+
+
+2. This options allow you to automatically run the training (and/or test) with new/trained weigths and  
