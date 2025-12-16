@@ -9,17 +9,18 @@ from Trainer_torch import Trainer
 from Model_torch import Model
 #from Plots import *
 
-from argparse import ArgumentParser
+
+from argparse import ArgumentParser, RawTextHelpFormatter
 
 
 import time
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
-parser = ArgumentParser()
+parser = ArgumentParser(formatter_class= RawTextHelpFormatter)
 
 parser.add_argument('-input_files_path', '-i', help = "Path to input files with TRB3 hits and momenta reconstruction")
 parser.add_argument('-mod', '-m' , choices=['Test', 'Train', 'GetWeights'],
-                    help = "Mode of the code: \n Predict: loads a model already trained, Train: makes a model and trains it",
+                    help = "Mode of the code:  \n Test: loads a model already trained \n Train: makes a model and trains it \n GetWeights: get the weights only of a trained model\n",
                     required = True)
                     
 parser.add_argument('-model_path','-p', help = "path to saved model", required = False)
