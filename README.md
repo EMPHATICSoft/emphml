@@ -25,7 +25,7 @@ This files were made for the arich UNet-CNN, so yeah modify em however needed
 
 1. UNet_torch.py has a parser integrated to run on terminal:
     * run: python UNet_torch.py -h to see all the available options
-  '''
+```
     usage: UNet_torch.py [-h] [-input_files_path INPUT_FILES_PATH] -mod
                      {Test,Train,GetWeights} [-model_path MODEL_PATH]
                      [-n_epochs N_EPOCHS] [-batch BATCH] [-saved_sets SAVED_SETS]
@@ -49,4 +49,4 @@ options:
                         path of saved sets
   -rebatch REBATCH      new batch size
 
-  '''
+```
