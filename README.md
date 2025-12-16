@@ -46,7 +46,8 @@ This files were made for the arich UNet-CNN, so yeah modify em however needed
                             batch size
       -saved_sets SAVED_SETS
                             path of saved sets 
-      -rebatch REBATCH      new batch size
+      -rebatch REBATCH
+                            new batch size
 ```
 
 
