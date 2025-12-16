@@ -2,6 +2,7 @@
 machine learning infrastructure for emphatic 
 
 
+
 # What each file does:
 
 *   Model_torch.py: contains model's architecture and forward function
@@ -11,3 +12,6 @@ machine learning infrastructure for emphatic
 *   UNet_torch.py: main function, calls the other files/objects
 
   
+# Disclaimer:
+
+This files were made for the arich UNet-CNN, so yeah modify em however needed 
