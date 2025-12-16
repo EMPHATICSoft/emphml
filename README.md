@@ -50,4 +50,6 @@ This files were made for the arich UNet-CNN, so yeah modify em however needed
 ```
 
 
-2. This options allow you to automatically run the training (and/or test) with new/trained weigths and  
+2. This options allow you to automatically run the training (and/or test) with new/trained weigths
+    
+3. I'd recomend to test first on jupyter notebook using tensorflow for small/local training and testing and then move to torch and EAF area
